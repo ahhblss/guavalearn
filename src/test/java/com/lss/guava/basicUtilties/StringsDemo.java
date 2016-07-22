@@ -1,5 +1,6 @@
 package com.lss.guava.basicUtilties;
 
+import com.google.common.base.MoreObjects;
 import com.google.common.base.Strings;
 import org.junit.Test;
 
@@ -22,5 +23,8 @@ public class StringsDemo {
         System.out.println(Strings.emptyToNull(""));
 
         System.out.println(Strings.isNullOrEmpty(""));
+
+        //返回第一个不为null的值
+        System.out.println(MoreObjects.firstNonNull("helloFirst",null));
     }
 }
